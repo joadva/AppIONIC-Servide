@@ -6,6 +6,10 @@ export const environment = {
   production: false
 };
 
+//export const ApiUrl = "http://api.geonames.org/citiesJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&lang=de&username=demo"
+export const ApiUrl = "https://jsonplaceholder.typicode.com";
+export const ApplicationJSON  = 'application/json';
+
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

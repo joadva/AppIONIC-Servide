@@ -1,17 +1,34 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">Tab 1</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-item-sliding id="item100" *ngFor="let user of users; let i = index">
+        <ion-item (click)="presentModal(user)">
+            <ion-label>
+                <h2>{{user.username}}</h2>
+                <p>{{user.email}}</p>
+                <p>{{user.phone}}</p>
+            </ion-label>
+            <!-- <ion-note slot="end">
+              10:45 AM
+          </ion-note> -->
+        </ion-item>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+        <ion-item-options side="start">
+            <ion-item-option>
+                <ion-icon slot="icon-only" name="heart"></ion-icon>
+            </ion-item-option>
+        </ion-item-options>
+
+        <ion-item-options side="end">
+            <ion-item-option color="danger">
+                <ion-icon slot="icon-only" name="trash"></ion-icon>
+            </ion-item-option>
+            <ion-item-option>
+                <ion-icon slot="icon-only" name="star"></ion-icon>
+            </ion-item-option>
+        </ion-item-options>
+    </ion-item-sliding>
 </ion-content>
