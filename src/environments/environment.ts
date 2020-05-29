@@ -6,7 +6,8 @@ export const environment = {
   production: false,
 };
 
-export const ApiUrl = "http://api.geonames.org";
+//export const ApiUrl = "http://api.geonames.org";
+export const ApiUrl = "https://jsonplaceholder.typicode.com/users";
 export const ApplicationJSON = "application/json";
 
 /*

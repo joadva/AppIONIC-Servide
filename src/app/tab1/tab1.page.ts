@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Geoname } from "../interface/interface";
 import { UserService } from "../services/user.service";
-import { ClassGetter } from "@angular/compiler/src/output/output_ast";
 
 @Component({
   selector: "app-tab1",
@@ -16,7 +15,7 @@ export class Tab1Page implements OnInit {
   }
 
   ngOnInit() {
-    this.uploadCities;
+    this.uploadCities();
   }
 
   uploadCities(event?) {
