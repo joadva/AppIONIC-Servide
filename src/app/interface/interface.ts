@@ -4,7 +4,7 @@ export interface ResponseCities {
   geonames: Geoname[];
 }
 
-interface Geoname {
+export interface Geoname {
   lng: number;
   geonameid: number;
   countrycode: string;
