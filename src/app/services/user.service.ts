@@ -1,4 +1,4 @@
-import { Injectable, Query } from "@angular/core";
+import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
 import { ApiUrl } from "src/environments/environment";
 import { ResponseCities } from "../interface/interface";
